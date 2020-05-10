@@ -1,0 +1,26 @@
+{
+  "name": "komponensek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server -a localhost -s",
+    "open": "opener http://localhost:8080",
+    "sass": "node-sass --output-style compressed src/main.scss -o dist -w",
+    "dev": "concurrently \"npm run sass\" \"npm run serve\" \"npm run open\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "http-server": "^0.12.3",
+    "opener": "^1.5.1"
+  }
+}

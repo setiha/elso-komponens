@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Komponensek</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<div class="container" id="app">
+
+    <!--oldalcim-->
+    <h1>Komponensek</h1>
+
+    <!--inputok-->
+    <div class="mb-3 ">
+    <input type="text" v-model="theme">
+    <input type="number" v-model="offset">
+    </div>
+
+    <!--komponensek-->
+    <counter-button v-bind:offset="offset" v-bind:theme="theme"></counter-button>
+    <counter-button offset="2" theme=""></counter-button>
+    <counter-button offset="2" theme=""></counter-button>
+</div>
+
+
+
+<!--vendor JS-->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="node_modules/vue/dist/vue.js"></script>
+
+
+<script src="src/counter-button.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
